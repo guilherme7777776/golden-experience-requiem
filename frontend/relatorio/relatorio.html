@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Relatórios</title>
+  <link rel="stylesheet" href="relatorio.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>📊 Relatórios do Sistema</h1>
+
+    <!-- RELATÓRIO DE VENDAS POR MÊS -->
+    <section class="card">
+      <h2>Vendas por Mês</h2>
+
+      <label>Escolha o mês:</label>
+      <input type="month" id="mesEscolhido">
+
+      <button class="btn" onclick="carregarRelatorioMes()">Gerar Relatório</button>
+
+      <p id="resultadoMes"></p>
+
+      <div class="grafico-container">
+        <canvas id="graficoMes"></canvas>
+      </div>
+    </section>
+
+    <!-- RELATÓRIO PRODUTOS MAIS VENDIDOS -->
+    <section class="card">
+      <h2>Produtos Mais Vendidos</h2>
+
+      <button class="btn" onclick="carregarRankingProdutos()">Gerar Relatório</button>
+
+      <p id="resultadoRanking"></p>
+
+      <div class="grafico-container">
+        <canvas id="graficoRanking"></canvas>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="relatorio.js"></script>
+</body>
+</html>

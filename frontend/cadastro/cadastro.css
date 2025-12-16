@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0fff0, #e6fffa);
+    color: #2d4a2d;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Container principal do formulário */
+.form-container {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(45, 74, 45, 0.15);
+    border: 1px solid #c0e0c0;
+}
+
+/* Título */
+.form-container h1 {
+    text-align: center;
+    color: #2d4a2d;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 3px solid aquamarine;
+    padding-bottom: 0.5rem;
+}
+
+/* Labels e inputs */
+form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: #2d4a2d;
+}
+
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #c0e0c0;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    border-color: aquamarine;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(127, 255, 212, 0.3);
+    background: #f9fffc;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, aquamarine, #40e0d0);
+    color: #2d4a2d;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid #2d4a2d;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #40e0d0, #20b2aa);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(64, 224, 208, 0.4);
+}
+
+/* Mensagem de resposta */
+#msg {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+#msg.success {
+    color: #155724;
+}
+
+#msg.error {
+    color: #a71e2a;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 1.5rem;
+    }
+
+    .form-container h1 {
+        font-size: 1.4rem;
+    }
+}

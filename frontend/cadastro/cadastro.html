@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Cliente</h1>
+
+        <form id="cadastroForm" class="form-box">
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
+
+            <label>Email:</label>
+            <input id="email" type="email" name="email" required>
+
+            <label>Senha:</label>
+            <input id="senha" type="password" name="senha" required>
+
+            <label>Endereço:</label>
+            <input type="text" name="endereco" required>
+
+            <label>Telefone:</label>
+            <input type="text" name="telefone" required>
+
+            <label>Data de Nascimento:</label>
+            <input type="date" name="data_nascimento" required>
+
+            <button type="submit" class="btn">Cadastrar</button>
+        </form>
+        
+        <p id="msg"></p>
+    </div>
+
+    <script src="./cadastro.js"></script>
+</body>
+</html>
